@@ -45,7 +45,7 @@ app.controller("index", ["$scope", "$http", "news", function($scope, $http, news
 app.controller('show', ['$scope', '$http', '$routeParams', function ($scope, $http, $routeParams) {
   // Caso o array esteja vazio, busca
   // os valores da API
-    $http.get('http://localhost:80/new-rest-api/news.php', {params: {id: $routeParams.ID}
+    $http.get('http://localhost:80/new-rest-api/news.php', {params: {new_id: $routeParams.ID}
   }).then(function(res){
     $scope.new = res.data;
   }).catch(function(response) {
