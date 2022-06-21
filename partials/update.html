@@ -1,0 +1,25 @@
+<div class="main jumbotron">
+  <h1>Editar Notícia</h1>
+
+  <div ng-repeat="detail in new">
+
+    <p><br><label>Título:</label></br></p>
+    <input type="text" align="center" id="tittle" name="tittle" autofocus ng-model="detail.tittle"/>
+  
+    <p><br><label>Descrição:</label></br></p>
+    <textarea rows="3" cols="40"  ng-model="detail.description"></textarea>
+
+    <p><br><label>Texto:</label></br></p>
+    <textarea rows="8" cols="40"  ng-model="detail.body"></textarea>  
+    
+    <!-- Ao clicar no botão Cadastrar a função $scope.update é chamada-->
+    <p><button ng-click="update(detail)" class="btn btn-primary">Editar</button></p>
+
+  </div>
+
+  
+
+  <!-- Note o link single page application!! # -->
+
+  <a href="#/index">Voltar</a>
+</div>

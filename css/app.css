@@ -1,0 +1,34 @@
+.main {
+  width: 500px;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.bigger {
+  font-size: larger;
+}
+
+body {
+  background-color: rgba(255,0,0,0.5);
+}
+
+.negrito {
+  font-weight: bold;
+  font-size:20px;
+}
+
+th {
+  text-align: center;
+}
+a {
+  color: #7C6B6B
+}
+
+input {
+  display: inline-block;
+  padding-left: 10px;
+  text-align: center;
+}

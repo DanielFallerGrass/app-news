@@ -1,0 +1,39 @@
+<body class="back">
+<div class="main jumbotron">
+  <h1>Notícias</h1>
+  <p>World Wide News</p>
+
+  <!-- A diretiva ng-repeat implementa um looping de repetição
+  através do qual buscamos todos os elementos do
+  array $scope.news e exibimo-os na tabela HTML
+  abaixo, ordenando-os pelo sua data de publicação
+  -->
+  <div ng-repeat="new in news | orderBy:'id'">
+    <br>
+    <b><span class="negrito">{{new.tittle}}</b></span>
+    <p>{{new.description}}</p>
+    <p><font size = "1"></size>{{new.published}}</font></p>
+    
+    <td>
+      <a class="btn btn-info" href="#/show/{{new.id}}">Visualizar</a>
+    </td>
+
+    <td>
+      <a class="btn btn-warning" href="#/update/{{new.id}}">Editar</a>
+    </td>
+
+    <td>
+      <button class="btn btn-danger" ng-click="delete(new)">Deletar</button>
+    </td>
+  </div>
+
+</div>
+
+<div class="main jumbotron">
+  <p>Faça parte da comunidade!</p>
+  <p>Cadastre suas notícias!</p>
+  
+  <!-- Note o link Single page Application!! # -->
+  <a class="btn btn-primary" href="#/create">Inserir nova notícia</a>
+</div>
+</body>
