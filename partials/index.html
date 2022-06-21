@@ -9,6 +9,7 @@
   abaixo, ordenando-os pelo sua data de publicação
   -->
   <div ng-repeat="new in news | orderBy:'id'">
+    <hr/>
     <br>
     <b><span class="negrito">{{new.tittle}}</b></span>
     <p>{{new.description}}</p>
